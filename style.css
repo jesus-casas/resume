@@ -1,4 +1,105 @@
-h1 {
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(255, 255, 255);
+    color: #fff;
+    line-height: 1.6;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    /* Css scroll Smooth */
+
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background: #ffffff;
+    border-bottom: 1px solid #434344;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+
+}
+
+.navbar ul li {
+    margin: 0 1rem;
+    padding: 1rem;
+
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+
+.navbar ul li a:hover {
+
+    color: cornflowerblue;
+
+} 
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+}
+section h1 {
+    font-size: 4rem;
     color: #778899
 
+}
+
+section h3 {
+    font-size: 2rem;
+    color: #FBFAF5;
+
+}
+
+.three{
+    color: #FBFAF5;
+
+}
+
+Section p {
+    font-size: 1.5rem;
+
+}
+
+section#JesusCasas {
+    background-color: #ffffff;
+    color: #333;
+}
+
+section#About {
+    background-color: #dadbde;
+    color: #333;
+}
+section#Education {
+    background-color: #555e73;
+    color: #333;
+}
+
+section#Projects {
+    background-color: #434344;
+    color: rgb(78, 54, 54);
 }
