@@ -99,3 +99,22 @@ section#Projects {
     background-color: #2E2E3B;
     color: #FBFAF5;
 }
+/** Footer **/
+section#footer {
+    height: 7rem;
+    text-align: center;
+    background-color: #dadbde;
+
+}
+
+#social-links{
+    padding: 20px;
+    font-size: large;
+
+}
+#copyright {
+    color: dimgrey;
+    padding-bottom: 20px;
+    font-size: 12px;
+
+}
