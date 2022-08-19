@@ -81,6 +81,10 @@ Section p {
 
 }
 
+a {
+    text-decoration: none;
+}
+
 section#JesusCasas {
     background-color: #FBFAF5;
     color: #333;
@@ -104,14 +108,20 @@ section#footer {
     height: 7rem;
     text-align: center;
     background-color: #dadbde;
-
+    text-decoration: none;
 }
 
 #social-links{
     padding: 20px;
     font-size: large;
-
+    text-decoration: none;
+    color: #333;
+    list-style: none;
+    text-decoration: none;
 }
+
+
+
 #copyright {
     color: dimgrey;
     padding-bottom: 20px;
