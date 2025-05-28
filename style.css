@@ -1,130 +1,185 @@
-* {
-    margin: 0;
-    padding: 0;
+/* Color Palette
+  #F8F9FA
+  #E9ECEF
+  #DEE2E6
+  #CED4DA
+*/
+
+/* Global styles 
+------------------------------------*/
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: rgb(255, 255, 255);
-    line-height: 1.6;
-    height: 100vh;
+  margin: 0;
+  margin-top: 30px;
+  background: white;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+    
 }
 
-.container {
-    width: 100%;
-    height: 100%;
-    /* Css scroll Smooth */
-
+.content-wrap {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 50px;
+  overflow: hidden;
 }
 
-.navbar {
-    position: fixed;
+/* Header styles 
+------------------------------------*/
+
+h1 {
+  font-size: 70px;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+h2 {
+  margin-top: 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px
+  
+}
+
+header h1, header h2 {
+    margin: 0;
+}
+
+.display {
+  text-align: center;
+  
+}
+
+.contact-info a {
+    padding: 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+
+.contact-info i {
+    margin-right: 5px; 
+}
+
+.nav-bar {
+    position: fixed; 
     top: 0;
-    z-index: 1;
-    display: flex;
+    left: 0;
     width: 100%;
-    height: 60px;
-    background: #FBFAF5;
-    border-bottom: 1px solid #434344;
-}
-
-.navbar ul {
-    display: flex;
-    list-style: none;
-    width: 100%;
-    justify-content: center;
-
-}
-
-.navbar ul li {
-    margin: 0 1rem;
-    padding: 1rem;
-
-}
-
-.navbar ul li a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #0E1111;
-}
-
-.navbar ul li a:hover {
-
-    color: cornflowerblue;
-
-} 
-
-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    background: black; 
+    padding: 10px 0;
     text-align: center;
+    z-index: 1000; 
+}
+
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+.nav-bar a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Column styles 
+------------------------------------*/
+
+.column-narrow {
+    width: 30%;
+    float: left;
+    padding-right: 3%;
+    min-height: 175px;
+}
+
+.column-wide {
+    width: 70%;
+    float: left;
+    min-height: 225px;
+}
+
+/* Image styles 
+------------------------------------*/
+
+.profile-img {
     width: 100%;
-    height: 100vh;
+    border-radius: 50%;
+    
 }
 
-section h1 {
-    font-size: 4rem;
-    color: #333;
-
+/* Font Styles
+------------------------------------*/
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-section h3 {
-    font-size: 2rem;
-    color: #FBFAF5;
-
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
-Section p {
-    font-size: 1.5rem;
-
+.roboto-text {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
 }
 
-a {
-    text-decoration: none;
+/* Style all sections */
+.content-section {
+  padding: 20px;
+  
 }
 
-section#JesusCasas {
-    background-color: #FBFAF5;
-    color: #333;
+/* Header
+------------------------------------*/
+#section-0 {
+  background-color: #F8F9FA;
+  text-align: center;
 }
 
-section#About {
-    background-color: #dadbde;
-    color: #333;
-}
-section#Education {
-    background-color: #687698;
-    color: #FBFAF5;
+/* Education
+------------------------------------*/
+#section-1 {
+  background-color: #E9ECEF;
 }
 
-section#Projects {
-    background-color: #2E2E3B;
-    color: #FBFAF5;
-}
-/** Footer **/
-section#footer {
-    height: 7rem;
-    text-align: center;
-    background-color: #dadbde;
-    text-decoration: none;
+/* Work Experience
+------------------------------------*/
+#section-2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('https://cdn.glitch.global/5a91e7a8-e358-4f5b-a2d8-378362b94737/background.png?v=1741425062618') center/cover no-repeat;
+    color: white; 
+    padding: 100px 20px;
 }
 
-#social-links{
-    padding: 20px;
-    font-size: large;
-    text-decoration: none;
-    color: #333;
-    list-style: none;
-    text-decoration: none;
+/* Projects
+------------------------------------*/
+#section-3 {
+  background-color: #CED4DA;
 }
 
-
-
-#copyright {
-    color: dimgrey;
-    padding-bottom: 20px;
-    font-size: 12px;
-
+/* Footer
+------------------------------------*/
+#section-4 {
+  text-align: center;
+  background-color: #ADB5BD;
+  
 }
