@@ -1,4 +1,4 @@
-# Resume Website
+# Website for resume
 
 ## Technologies
 - HTML/CSS

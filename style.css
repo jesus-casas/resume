@@ -165,7 +165,7 @@ header h1, header h2 {
 ------------------------------------*/
 #section-2 {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                url('https://cdn.glitch.global/5a91e7a8-e358-4f5b-a2d8-378362b94737/background.png?v=1741425062618') center/cover no-repeat;
+                url('./assets/background.png') center/cover no-repeat;
     color: white; 
     padding: 100px 20px;
 }
